@@ -1,4 +1,4 @@
-# # 🐍 Projeto Django
+## 🐍 Projeto Django
 
 Este é um projeto desenvolvido com [Django](https://www.djangoproject.com/)
 
@@ -10,22 +10,6 @@ Este é um projeto desenvolvido com [Django](https://www.djangoproject.com/)
 - ✅ Estrutura pronta para deploy e extensões
 - ✅ Modularização em apps Django
 
-## 🏗 Estrutura do Projeto
-
-meu_projeto/
-├── manage.py
-├── meu_projeto/
-│ ├── init.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── app_principal/
-│ ├── models.py
-│ ├── views.py
-│ ├── urls.py
-│ └── templates/
-├── db.sqlite3
-└── requirements.txt
 
 ## 🚀 Como executar
 
