@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    font-family:'Montserrat',sans-serif;;
+}
+
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: 	#ffffff;
+    display: flex; /*Alinha lado a lado*/
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side{
+    width: 50vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+    flex-direction: column;
+}
+
+.left-side{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 60%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #96cdee;
+    border-radius: 20px;
+    
+}
+
+.btn{
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    margin: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    box-shadow: ;
+}
+
+.btn:hover{
+    background-color: #cccccc;
+    transition: 0.5s;
+    text-color: #f0f4f8;
+}
+.mensagem-erro{
+    color:rgb(234, 13, 13);
+}
+
+img {
+    height: 700px;
+    width: 700px;
+    outline: none;
+}
+
+.card > h1{
+    color:#f0f4f8;
+    font-weight: 1000;
+    margin: 0;
+    margin-bottom: 60px;
+    
+}
+
+.textfield{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f0f4f8;
+    outline: none;
+    color:#0a0a0a;
+    margin-bottom: 15px;
+    box-sizing: border-box; 
+}
+
+.textfield > label{
+    color:rgb(62, 64, 66);
+    margin-bottom: 10px;
+}
+
+.textfield >input::placeholder{
+    color: #9292a5;
+}

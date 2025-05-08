@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    {% block 'head' %}{% endblock 'head' %}
+</head>
+<body>
+    <div class="main-div">
+        <div class="right-side">
+            <div>
+                <img src="{% static 'hospital.svg' %}" alt="Hospital">
+            </div>
+        </div>
+        <div class="left-side">
+            <form class="card" action="{% url 'home'%}" method="POST"> {% csrf_token %}  
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="user">Usuário</label>
+                    <input name="user" placeholder="Usuário"></input>
+                </div>
+                <div class="textfield">
+                    <label for="password">Senha</label>
+                    <input name="password" placeholder="Senha" type="password"></input>
+                </div>
+                <button class="btn" type="submit">Entrar</button>
+                <button class="btn" type="button" onclick="window.location.href='{% url 'register' %}'">Cadastrar-se</button>
+                {% if erro %}
+                <div class="mensagem-erro">
+                    {{ erro }}
+                </div>
+                {% endif %}
+            </form>
+          
+        </div>
+        
+    </div>
+    
+    {% block 'body' %}{% endblock 'body' %}
+</body>
+
+
+
+</html>
